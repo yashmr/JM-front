@@ -5,23 +5,22 @@ define(function(require, exports) {
 
     //backbone
     var Backbone = require('backbone');
+    var _ = require('underscore');
 
     //tpl
     var tpl = require('./tpl/container.html');
-    var _ = require('underscore');
 
-    var Bookmark = new (Backbone.View.extend({
-        tagName : 'div',
-        initialize:function(){
-        		this.render();
+    C = new Backbone.View.extend({
+    		el:$('#Container'), //填充Container Div
+        initialize : function() {
+            this.render();
         },
         render : function() {
             $(this.el).html(_.template(tpl));
             return this;
         }
-    }))({el:$('#Container')});
+    });
     
-    //var test = new Bookmark();
-    //console.log(test);
+    var Container = new C();
 
-});
+}); 

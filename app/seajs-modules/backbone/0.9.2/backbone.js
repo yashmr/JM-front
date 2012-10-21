@@ -1,9 +1,9 @@
-define('#backbone/0.9.2/backbone', ['underscore', '$'], function(require, exports) {
+define('#backbone/0.9.2/backbone', ['underscore', 'jquery'], function(require, exports) {
 
   var previousUnderscore = this._;
   var previousJQuery = this.jQuery;
   this._ = require('underscore');
-  this.jQuery = require('$');
+  this.jQuery = require('jquery');
 
 // Backbone.js 0.9.2
 

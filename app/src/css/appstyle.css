@@ -1,0 +1,18 @@
+body {
+	background: #D9EDF7;
+}
+
+/*Header*/
+#header h1{
+	text-align:center;
+}
+
+/*Footer*/
+#footer p {
+	text-align: center;
+}
+
+/*Sidebar*/
+#sidebar .well{
+	margin-bottom:10px;
+}
